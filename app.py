@@ -14,7 +14,7 @@ NO_POSTER = "https://via.placeholder.com/300x450?text=No+Poster"
 def fetch_poster(movie_id):
     url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={API_KEY}&language=en-US"
 
-    for _ in range(3):
+    for _ in range(5):
         try:
             response = requests.get(url, timeout=20)
 
